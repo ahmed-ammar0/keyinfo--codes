@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F4F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+h1 {
+  font-size: 170px;
+  color: #424242;
+}
+
+h5 {
+  background-color: #B9E9FF;
+  color: #4D424E;
+}
+
+h5+div {
+  color: #4D424E;
+  background-color: #fff;
+  height: 70px;
+}
+
+.item {
+  cursor: pointer;
+  transition: 400ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.my-tooltip {
+  position: absolute;
+  background-color: #1BA1E2;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
